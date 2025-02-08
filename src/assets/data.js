@@ -55,7 +55,7 @@ export const projects = [
       description:
          'Un programa creado para que estudiantes de la universidad puedan intercambiarse los grupos.',
       image: 'xchanger',
-      color: '#f3c201',
+      color: '#fffff',
    }
 ];
 

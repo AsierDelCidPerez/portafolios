@@ -5,21 +5,14 @@ import { projects, buttons } from '../assets/data';
 
 export function getStaticPaths() {
    return [
-      { params: { id: 'xchanger' } },
-      { params: { id: 'image-youtube-clone' } },
-      { params: { id: 'image-ecommerce' } },
-      { params: { id: 'image-facebook-clone' } },
-      { params: { id: 'image-instagram-clone' } },
-      { params: { id: 'image-slider' } },
-      { params: { id: 'image-spotify-clone' } },
-      { params: { id: 'image-chatgpt-api' } },
+      { params: { id: 'xchanger' } }
    ];
 }
 
 const card = projects.find((card) => card.image == id);
 ---
 
-<Layout title={`Project | ${id}`}>
+<Layout title={`Proyecto | ${id}`}>
    <div
       class="relative flex items-center lg:h-screen xs:h-fit"
       transition:name={`image-${id}`}
