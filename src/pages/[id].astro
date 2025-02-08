@@ -5,7 +5,7 @@ import { projects, buttons } from '../assets/data';
 
 export function getStaticPaths() {
    return [
-      { params: { id: 'image-blog' } },
+      { params: { id: 'xchanger' } },
       { params: { id: 'image-youtube-clone' } },
       { params: { id: 'image-ecommerce' } },
       { params: { id: 'image-facebook-clone' } },
@@ -31,10 +31,10 @@ const card = projects.find((card) => card.image == id);
          style=`--context-color: ${card.color}`
       >
          <img
-            src={`${id}.jpg`}
+            src={`${id}.png`}
             alt="#"
             id="fade-image"
-            class="transition-all duration-500 absolute z-[-1] inset-0 mix-blend-overlay opacity-20 scale-90 w-full h-full object-cover blur-md"
+            class="transition-all duration-500 absolute z-[-1] inset-0 mix-blend-overlay opacity-20 scale-90 w-full h-full object-cover"
          />
 
          <div class="absolute inset-0 bg-gradient-to-t via-transparent from-zinc-900"></div>
@@ -44,7 +44,7 @@ const card = projects.find((card) => card.image == id);
       <div class="flex justify-center items-center w-full h-[80%] xs:h-fit">
          <div class="flex gap-x-10 2xl:mt-2 2xl:w-3/5 2xl:h-fit xl:w-4/5 lg:mt-0 lg:flex-row lg:h-[90%] xs:w-4/5 xs:flex-col-reverse">
             <img
-               src={`${id}.jpg`}
+               src={`${id}.png`}
                alt="#"
                class="hover:scale-[105%] duration-300 ease-in aspect-square object-cover object-top mx-auto lg:mb-0 lg:mt-0 sm:w-[450px] xxs:mt-10 xs:w-[90%] xs:mb-5 xs:mt-20"
             />
@@ -69,9 +69,10 @@ const card = projects.find((card) => card.image == id);
                   >
 
                   <a
-                     href="#"
+                     target="_blank"
+                     href={buttons[0].livedemo}
                      class="text-2xl opacity-60 hover:opacity-100 duration-300 ease-in"
-                     ><i class={`${buttons[0].demo} lg:text-[17px] xs:text-[14px]`}> Live Demo</i></a
+                     ><i class={`${buttons[0].livedemo} lg:text-[17px] xs:text-[14px]`}> Live Demo</i></a
                   >
                </div>
             </div>

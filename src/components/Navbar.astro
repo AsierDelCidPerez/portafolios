@@ -13,7 +13,7 @@ import { socials, info } from '../assets/data';
          socials.map((social) => (
             <li>
                <a
-                  href="#"
+                  href={social.link}
                   class="text-2xl opacity-50 hover:opacity-100 duration-300 ease-in cursor-pointer"
                >
                   <i class={social.logo} />
@@ -31,7 +31,7 @@ import { socials, info } from '../assets/data';
          <a
             class="opacity-70 hover:opacity-100 duration-300 text-[17px] font-semibold"
             href="#home"
-            >Home</a
+            >Inicio</a
          >
       </li>
 
