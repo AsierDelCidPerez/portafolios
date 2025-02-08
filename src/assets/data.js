@@ -1,6 +1,6 @@
 export const socials = [ {logo: 'bx bxl-linkedin-square', link: 'https://es.linkedin.com/in/asier-del-cid-p%C3%A9rez-0198b2233'}, { logo: 'bx bxl-instagram', link: 'https://www.instagram.com/adelcidp142/' }, { logo: 'bx bxl-github', link: 'https://github.com/AsierDelCidPerez' }, {logo: 'bx bxl-twitter', link: 'https://twitter.com/adelcidp_175'} ];
 
-export const info = [{ text: 'Sobre mi' }, { text: 'Proyectos' }];
+export const info = [{ text: 'About' }, { text: 'Proyectos' }];
 
 export const technologies = [
    {
